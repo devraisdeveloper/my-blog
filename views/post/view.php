@@ -31,7 +31,7 @@ $photoInfo = $model->PictureInfo;
         <div class="row">
             <div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
             <h1 align="center"><?= Html::encode($this->title) ?> </h1>           
-            <?= ($model->isDefaultPicture != true) ? Html::img($photoInfo['url'],['class'=>'img-responsive', 'alt'=> $photoInfo['alt']]) : '' ?>
+            <?= Html::img($photoInfo['url'],['class'=>'img-responsive', 'alt'=> $photoInfo['alt']]) ?>
             <p class="text-responsive"><?= $model->text?></p>
             <h4><?php echo 'Post created at '. $model->created_at ?></h4>
             <?= Html::button('Add Comment',['class'=>'btn btn-success','onclick'=>'openCommentForm('.$model->id.')']) ?>
