@@ -32,6 +32,7 @@ INSTALLATION
 
 ### Create a virtual host
 
+```
 <VirtualHost *:80>
         ServerAdmin admin@blog.com
         ServerName blog.com
@@ -40,6 +41,7 @@ INSTALLATION
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
 
 
 ### Download "Vendor" files to project
