@@ -50,6 +50,18 @@ INSTALLATION
 composer update
 ~~~
 
+### Add permissions
+~~~
+/runtime
+
+/web/assets
+
+/web/images
+~~~
+
+
+### Open main page
+
 Main url for project should be :
 ~~~
 http://blog.com
@@ -115,3 +127,16 @@ in order to see community-posts.
 
 Yii2 framework uses MVC pattern. All code is in corresponding folders respectfully.
 Also jquery and css files are located in web folder : /web
+
+If you have a project path with additional subfolders you will encounter difficulties when attempting to add a comment. My jquery functions are not supposed solve dynamic rooting problems.
+Example:
+
+Get Url: http://blog.com/post/comment?id=1
+
+You will need to hardcode subfolders to this path in web/js/j.js.
+
+~~~
+function openCommentForm(postId){
+   $('#modal-'+ postId).modal('show');
+ $('#modalContent-' + postId).load('/post/comment?id='+ postId);
+ ~~~
