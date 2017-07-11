@@ -60,7 +60,7 @@ This can be done /config/web.php
 
 This is how you can disable:
 
-```
+```php
         'urlManager' => [
             'enablePrettyUrl' => false,
         /*    'showScriptName' => false,
