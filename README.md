@@ -52,7 +52,7 @@ composer update
 
 Main url for project should be :
 ~~~
-http://http://blog.com
+http://blog.com
 ~~~
 
 In case you have problems with pretty urls you can disable them
@@ -60,12 +60,14 @@ This can be done /config/web.php
 
 This is how you can disable:
 
+```
         'urlManager' => [
             'enablePrettyUrl' => false,
         /*    'showScriptName' => false,
             'rules' => [
             ],*/
         ],
+```
 
 
 CONFIGURATION
